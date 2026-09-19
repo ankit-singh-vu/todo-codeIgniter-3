@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route['todo'] = 'Todo/index';
+$route['todo/create'] = 'Todo/create';
+$route['todo/store'] = 'Todo/store';
+$route['todo/edit/(:num)'] = 'Todo/edit/$1';
+$route['todo/update/(:num)'] = 'Todo/update/$1';
+$route['todo/show/(:num)'] = 'Todo/show/$1';
+$route['todo/delete/(:num)'] = 'Todo/delete/$1';
